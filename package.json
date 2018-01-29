@@ -1,0 +1,13 @@
+{
+  "name": "angular5-using-systemjs",
+  "version": "1.0.0",
+  "description": "Angular 5 setup using simple System.js",
+  "license": "MIT",
+  "dependencies": {
+  },
+  "devDependencies": {
+  },
+  "scripts": {
+    "serve": "node build/test1"
+  }
+}

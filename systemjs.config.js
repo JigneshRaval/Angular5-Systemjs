@@ -13,7 +13,11 @@ System.config({
         "experimentalDecorators": true,
         "lib": ["es2015", "dom"],
         "noImplicitAny": true,
-        "suppressImplicitAnyIndexErrors": true
+        "suppressImplicitAnyIndexErrors": true,
+        "baseUrl": "app",
+        "paths": {
+            "@app/*": ["app/*"]
+        }
     },
     paths: {
         'npm:': 'https://unpkg.com/'

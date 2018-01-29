@@ -9,6 +9,8 @@ import { Component } from '@angular/core';
       <template-driven-form-component></template-driven-form-component>
 
       <list-view-component></list-view-component>
+
+      <filter-list-view-component></filter-list-view-component>
     </div>
   `,
   styles: [`
