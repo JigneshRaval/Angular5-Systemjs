@@ -11,6 +11,8 @@ import { Component } from '@angular/core';
       <list-view-component></list-view-component>
 
       <filter-list-view-component></filter-list-view-component>
+
+      <iframe-component></iframe-component>
     </div>
   `,
   styles: [`

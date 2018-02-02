@@ -12,7 +12,7 @@ import { Http, Response } from '@angular/http';
         <h3>Filter country list pipe example</h3>
 
         <input placeholder="country name" [(ngModel)]="searchText"/>
-        <ul>
+        <ul style="height: 250px; border: 1px solid red; overflow: auto; width: 300px;">
             <li *ngFor="let country of countries | searchFilterList: searchText">
                 {{country.name | upperCasePipe}} ({{country.code}})
             </li>

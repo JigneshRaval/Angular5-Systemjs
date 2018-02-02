@@ -14,6 +14,10 @@ import { SearchFilterPipe } from './components/pipes-example/search-filter-list.
 import { FilterListViewComponent } from './components/pipes-example/list-view.component';
 import { UpperCasePipe } from './components/pipes-example/uppercase.filter';
 
+import { IframeComponent } from './components/safe-url-pipe/iframe.component';
+import { SafeURLPipe } from './components/safe-url-pipe/safe-url-pipe.pipe';
+import { SafeURLPipe2 } from './components/safe-url-pipe/safe-url-pipe2.pipe';
+
 @NgModule({
   imports: [
     BrowserModule,
@@ -28,7 +32,10 @@ import { UpperCasePipe } from './components/pipes-example/uppercase.filter';
     ListViewComponent,
     SearchFilterPipe,
     UpperCasePipe,
-    FilterListViewComponent
+    FilterListViewComponent,
+    SafeURLPipe,
+    SafeURLPipe2,
+    IframeComponent
   ],
   bootstrap: [
     AppComponent
