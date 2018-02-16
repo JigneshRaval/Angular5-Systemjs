@@ -34,7 +34,7 @@ export class Sibling2Component implements OnChanges {
             data => {
                 console.log('Sibling2Component-received from sibling1: ' + data);
                 this.searchCaseNumber = data;
-               this.sibling2Form.patchValue({
+                this.sibling2Form.patchValue({
                     caseNumber: data
                 });
             });

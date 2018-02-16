@@ -1,5 +1,5 @@
 import { Injectable } from '@angular/core';
-import { Subject }    from 'rxjs/Subject';
+import { Subject } from 'rxjs/Subject';
 
 
 @Injectable()
@@ -7,15 +7,15 @@ export class SharedService {
     //private caseNumber: any;
 
     // Observable string sources
-  private caseNumber = new Subject<string>();
+    private caseNumber = new Subject<string>();
 
-  // Observable string streams
-  caseNumber$ = this.caseNumber.asObservable();
+    // Observable string streams
+    caseNumber$ = this.caseNumber.asObservable();
 
     // Service message commands
-  publishData(data: string) {
-    this.caseNumber.next(data);
-  }
+    publishData(data: string) {
+        this.caseNumber.next(data);
+    }
 
 
     // publishData(data: string) {

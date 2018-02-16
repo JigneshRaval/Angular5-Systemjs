@@ -28,35 +28,42 @@ import { ParentThreeComponent } from './components/data-sharing-example/using-se
 import { Sibling1Component } from './components/data-sharing-example/using-service/child1.component';
 import { Sibling2Component } from './components/data-sharing-example/using-service/child2.component';
 
+import { HomeComponent } from './components/data-sharing-example/using-service-2/home.component';
+import { MessageService } from './components/data-sharing-example/using-service-2/message.service';
+
 @NgModule({
-  imports: [
-    BrowserModule,
-    FormsModule,
-    ReactiveFormsModule,
-    HttpModule
-  ],
-  declarations: [
-    AppComponent,
-    LinkTestComponent,
-    OutSideEventHandlerDirective,
-    TemplateDrivenFormComponent,
-    ListViewComponent,
-    SearchFilterPipe,
-    UpperCasePipe,
-    FilterListViewComponent,
-    SafeURLPipe,
-    SafeURLPipe2,
-    IframeComponent,
-    ParentOneComponent,
-    ChildOneComponent,
-    ParentTwoComponent,
-    ChildTwoComponent,
-    ParentThreeComponent,
-    Sibling1Component,
-    Sibling2Component
-  ],
-  bootstrap: [
-    AppComponent
-  ]
+    imports: [
+        BrowserModule,
+        FormsModule,
+        ReactiveFormsModule,
+        HttpModule
+    ],
+    declarations: [
+        AppComponent,
+        LinkTestComponent,
+        OutSideEventHandlerDirective,
+        TemplateDrivenFormComponent,
+        ListViewComponent,
+        SearchFilterPipe,
+        UpperCasePipe,
+        FilterListViewComponent,
+        SafeURLPipe,
+        SafeURLPipe2,
+        IframeComponent,
+        ParentOneComponent,
+        ChildOneComponent,
+        ParentTwoComponent,
+        ChildTwoComponent,
+        ParentThreeComponent,
+        Sibling1Component,
+        Sibling2Component,
+        HomeComponent
+    ],
+    providers: [
+        MessageService
+    ],
+    bootstrap: [
+        AppComponent
+    ]
 })
 export class AppModule { }
