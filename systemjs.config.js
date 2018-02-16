@@ -19,11 +19,27 @@ System.config({
             "@app/*": ["app/*"]
         }
     },
+    meta: {
+        'typescript': {
+            "exports": "ts"
+        }
+    },
     paths: {
-        'npm:': 'https://unpkg.com/'
+        //'npm:': 'https://unpkg.com/'
+        'npm:': './node_modules/'
     },
     map: {
         'app': './app',
+        '@angular/core': 'npm:@angular/core/bundles/core.umd.js',
+        '@angular/common': 'npm:@angular/common/bundles/common.umd.js',
+        '@angular/compiler': 'npm:@angular/compiler/bundles/compiler.umd.js',
+        '@angular/platform-browser': 'npm:@angular/platform-browser/bundles/platform-browser.umd.js',
+        '@angular/platform-browser-dynamic': 'npm:@angular/platform-browser-dynamic/bundles/platform-browser-dynamic.umd.js',
+        '@angular/http': 'npm:@angular/http/bundles/http.umd.js',
+        '@angular/router': 'npm:@angular/router/bundles/router.umd.js',
+        '@angular/forms': 'npm:@angular/forms/bundles/forms.umd.js',
+
+        /*
         '@angular/core': 'npm:@angular/core@5.2.1/bundles/core.umd.js',
         '@angular/common': 'npm:@angular/common@5.2.1/bundles/common.umd.js',
         '@angular/compiler': 'npm:@angular/compiler@5.2.1/bundles/compiler.umd.js',
@@ -32,6 +48,7 @@ System.config({
         '@angular/http': 'npm:@angular/http@5.2.1/bundles/http.umd.js',
         '@angular/router': 'npm:@angular/router@5.2.1/bundles/router.umd.js',
         '@angular/forms': 'npm:@angular/forms@5.2.1/bundles/forms.umd.js',
+        */
 
         // Test Suite
         // '@angular/core/testing': 'npm:@angular/core/bundles/core-testing.umd.js',
@@ -43,7 +60,7 @@ System.config({
         // '@angular/router/testing': 'npm:@angular/router/bundles/router-testing.umd.js',
         // 'tsconfig.json': './tsconfig.json',
         // 'typescript': 'https://unpkg.com/typescript@2.4.2/lib/typescript.js',
-        'rxjs': 'npm:rxjs@5.5.6'
+        'rxjs': 'npm:rxjs'
     },
     packages: {
         app: {

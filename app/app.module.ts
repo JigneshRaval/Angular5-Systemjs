@@ -1,6 +1,6 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, FormBuilder, FormGroup, ReactiveFormsModule } from '@angular/forms';
 import { HttpModule } from "@angular/http";
 
 import { AppComponent } from './app.component';
@@ -18,10 +18,21 @@ import { IframeComponent } from './components/safe-url-pipe/iframe.component';
 import { SafeURLPipe } from './components/safe-url-pipe/safe-url-pipe.pipe';
 import { SafeURLPipe2 } from './components/safe-url-pipe/safe-url-pipe2.pipe';
 
+import { ParentOneComponent } from './components/data-sharing-example/parent-to-child/parent.component';
+import { ChildOneComponent } from './components/data-sharing-example/parent-to-child/child.component';
+
+import { ParentTwoComponent } from './components/data-sharing-example/child-to-parent/parent.component';
+import { ChildTwoComponent } from './components/data-sharing-example/child-to-parent/child.component';
+
+import { ParentThreeComponent } from './components/data-sharing-example/using-service/parent.component';
+import { Sibling1Component } from './components/data-sharing-example/using-service/child1.component';
+import { Sibling2Component } from './components/data-sharing-example/using-service/child2.component';
+
 @NgModule({
   imports: [
     BrowserModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpModule
   ],
   declarations: [
@@ -35,7 +46,14 @@ import { SafeURLPipe2 } from './components/safe-url-pipe/safe-url-pipe2.pipe';
     FilterListViewComponent,
     SafeURLPipe,
     SafeURLPipe2,
-    IframeComponent
+    IframeComponent,
+    ParentOneComponent,
+    ChildOneComponent,
+    ParentTwoComponent,
+    ChildTwoComponent,
+    ParentThreeComponent,
+    Sibling1Component,
+    Sibling2Component
   ],
   bootstrap: [
     AppComponent

@@ -24,16 +24,26 @@
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
         crossorigin="anonymous"></script>
 
-    <!-- load the dependencies -->
-    <script src="https://unpkg.com/core-js@2.5.3/client/shim.min.js"></script>
+    <!-- Angular 4 : load the dependencies -->
+    <!--<script src="https://unpkg.com/core-js@2.5.3/client/shim.min.js"></script>
     <script src="https://unpkg.com/zone.js@0.8.20/dist/zone.js"></script>
     <script src="https://unpkg.com/zone.js/dist/long-stack-trace-zone.js"></script>
     <script src="https://unpkg.com/reflect-metadata@0.1.12/Reflect.js"></script>
-    <script src="https://unpkg.com/typescript@2.4.2/lib/typescript.js"></script>
+    <script src="https://unpkg.com/typescript@2.4.2/lib/typescript.js"></script>-->
 
     <!-- load our angular app with systemjs -->
-    <script src="https://unpkg.com/systemjs@0.19.39/dist/system.js"></script>
+    <!--<script src="https://unpkg.com/systemjs@0.19.39/dist/system.js"></script>-->
 
+    <!-- Angular 4 : load the dependencies -->
+    <script src="./shim.min.js"></script>
+    <script src="./typescript.js"></script>
+    <script src="./zone.js"></script>
+    <script src="https://unpkg.com/zone.js/dist/long-stack-trace-zone.js"></script>
+    <script src="./Reflect.js"></script>
+
+
+    <!-- load our angular app with systemjs -->
+    <script src="./system-0.19.39.js"></script>
     <script src="systemjs.config.js"></script>
     <script>
         System.import('app').catch(function (err) { console.error(err); });

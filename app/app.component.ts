@@ -13,6 +13,12 @@ import { Component } from '@angular/core';
       <filter-list-view-component></filter-list-view-component>
 
       <iframe-component></iframe-component>
+
+      <parent-one-component></parent-one-component>
+
+      <parent-two-component></parent-two-component>
+
+      <parent-three-component></parent-three-component>
     </div>
   `,
   styles: [`
