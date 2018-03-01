@@ -25,6 +25,8 @@ import { Subscription } from 'rxjs/Subscription';
         <parent-three-component></parent-three-component>
 
         <home-component></home-component>
+
+        <accordion-one-component (myFunction)="alertAccordion($event)"></accordion-one-component>
     </div>
   `,
     styles: [`
@@ -37,5 +39,9 @@ export class AppComponent {
     constructor(private messageService: MessageService) {
         // subscribe to home component messages
         this.subscription = this.messageService.getMessage().subscribe(message => { this.message = message; });
+    }
+
+    alertAccordion(childInputValue) {
+        console.log(childInputValue)
     }
 }

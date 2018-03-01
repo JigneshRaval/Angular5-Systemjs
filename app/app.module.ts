@@ -31,6 +31,8 @@ import { Sibling2Component } from './components/data-sharing-example/using-servi
 import { HomeComponent } from './components/data-sharing-example/using-service-2/home.component';
 import { MessageService } from './components/data-sharing-example/using-service-2/message.service';
 
+import { AccordionComponent } from './components/accordion/accordion.component';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -57,7 +59,8 @@ import { MessageService } from './components/data-sharing-example/using-service-
         ParentThreeComponent,
         Sibling1Component,
         Sibling2Component,
-        HomeComponent
+        HomeComponent,
+        AccordionComponent
     ],
     providers: [
         MessageService
