@@ -1,4 +1,5 @@
 import { Component, OnInit, AfterViewInit, ElementRef, Input, Renderer2, ChangeDetectorRef } from '@angular/core';
+import { DOCUMENT } from '@angular/platform-browser';
 
 @Component({
     selector: 'dev-carousel',
@@ -77,7 +78,14 @@ export class DevCarouselComponent implements OnInit, AfterViewInit {
         this._uuid = 'carousel_' + Math.random().toString(36).substring(2);
     }
 
-    constructor(private _el: ElementRef, private renderer: Renderer2, private cdr: ChangeDetectorRef) { }
+    constructor(
+        private _el: ElementRef,
+        private renderer: Renderer2,
+        private cdr: ChangeDetectorRef,
+        @Inject(DOCUMENT) private document: any
+    ) {
+        this.checkPageVisibility();
+    }
 
     ngOnInit() {
         this.carouselContainer = this._el.nativeElement.firstElementChild;
