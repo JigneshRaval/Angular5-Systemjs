@@ -33,6 +33,9 @@ import { MessageService } from './components/data-sharing-example/using-service-
 
 import { AccordionComponent } from './components/accordion/accordion.component';
 
+import { CarouselNewIndex } from './components/carousel/dev-carousel-index.component';
+import { DevCarouselComponent } from './components/carousel/dev-carousel.component';
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -60,7 +63,9 @@ import { AccordionComponent } from './components/accordion/accordion.component';
         Sibling1Component,
         Sibling2Component,
         HomeComponent,
-        AccordionComponent
+        AccordionComponent,
+        CarouselNewIndex,
+        DevCarouselComponent
     ],
     providers: [
         MessageService

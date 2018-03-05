@@ -16,7 +16,7 @@ import { Subscription } from 'rxjs/Subscription';
 
         <filter-list-view-component></filter-list-view-component>
 
-        <iframe-component></iframe-component>
+       <!-- <iframe-component></iframe-component>
 
         <parent-one-component></parent-one-component>
 
@@ -24,9 +24,11 @@ import { Subscription } from 'rxjs/Subscription';
 
         <parent-three-component></parent-three-component>
 
-        <home-component></home-component>
+        <home-component></home-component> -->
 
         <accordion-one-component (myFunction)="alertAccordion($event)"></accordion-one-component>
+
+        <carousel-new-index></carousel-new-index>
     </div>
   `,
     styles: [`
