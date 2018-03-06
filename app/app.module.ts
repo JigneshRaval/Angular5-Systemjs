@@ -35,6 +35,7 @@ import { AccordionComponent } from './components/accordion/accordion.component';
 
 import { CarouselNewIndex } from './components/carousel/dev-carousel-index.component';
 import { DevCarouselComponent } from './components/carousel/dev-carousel.component';
+import { CarouselUtility } from './components/carousel/dev-carousel.utility';
 
 @NgModule({
     imports: [
@@ -68,7 +69,8 @@ import { DevCarouselComponent } from './components/carousel/dev-carousel.compone
         DevCarouselComponent
     ],
     providers: [
-        MessageService
+        MessageService,
+        CarouselUtility
     ],
     bootstrap: [
         AppComponent

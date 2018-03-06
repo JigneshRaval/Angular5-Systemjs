@@ -145,9 +145,6 @@
     animation-iteration-count: 1;
     animation-delay: 0s;
     transform: translateZ(0);
-    /*transform: translateX(0);
-    transition: transform 0.5s;
-    transform: translateZ(0);*/
     z-index: 3;
 }
 
@@ -162,9 +159,6 @@
 }
 .carousel__slide.prev { animation-name: slideLeftOut; }
 .carousel__slide.active.next { animation-name: slideRightIn; }
-
-/*.carousel__slide.prev { transform: translateX(-100%); }
-.carousel__slide.active.next { transform: translateX(-100%); }*/
 
 /* Carousel Animating slide("_L") */
 @keyframes slideRightOut {

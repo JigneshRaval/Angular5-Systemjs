@@ -8,7 +8,7 @@ import { Subscription } from 'rxjs/Subscription';
     <div>
         <p>App Component Message : {{ message }}</p>
 
-        <link-test-component></link-test-component>
+        <!-- <link-test-component></link-test-component> -->
 
         <template-driven-form-component></template-driven-form-component>
 
@@ -16,7 +16,7 @@ import { Subscription } from 'rxjs/Subscription';
 
         <filter-list-view-component></filter-list-view-component>
 
-       <!-- <iframe-component></iframe-component>
+       <iframe-component></iframe-component>
 
         <parent-one-component></parent-one-component>
 
@@ -24,7 +24,7 @@ import { Subscription } from 'rxjs/Subscription';
 
         <parent-three-component></parent-three-component>
 
-        <home-component></home-component> -->
+        <home-component></home-component>
 
         <accordion-one-component (myFunction)="alertAccordion($event)"></accordion-one-component>
 
