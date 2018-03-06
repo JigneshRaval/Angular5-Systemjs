@@ -17,32 +17,30 @@ export class CarouselUtility {
     //isBrowserTabfocused$ = this.isBrowserTabfocused.asObservable();
 
     constructor( @Inject(DOCUMENT) private document: any) {
-        console.log('Carousel Service');
         this._window().addEventListener('focus', () => {
             this.setPageVisibility(true);
-            console.log('Window focus Service ::', this.isBrowserTabfocused);
         }, false);
 
         this._window().addEventListener('blur', () => {
             this.setPageVisibility(false);
-            console.log('Window blur Service ::', this.isBrowserTabfocused);
         }, false);
 
         this.checkPageVisibility();
 
         // Warn if the browser doesn't support addEventListener or the Page Visibility API
         if (typeof this.document.addEventListener === 'undefined' || typeof this.document[this.hidden] === 'undefined') {
-            console.log('This demo requires a modern browser that supports the Page Visibility API.');
+            if (console) {
+                console.log('This demo requires a modern browser that supports the Page Visibility API.');
+            }
         } else {
             // Handle page visibility change
-            console.log('change tab');
             this.document.addEventListener(this.visibilityChange, this.handleVisibilityChange.bind(this), false);
         }
     }
 
     // Service message commands
     public setPageVisibility(data) {
-        console.log('Observable :', Observable.of(this.isBrowserTabfocused));
+        // console.log('Observable :', Observable.of(this.isBrowserTabfocused));
         this.isBrowserTabfocused.next(data);
     }
 
@@ -68,10 +66,8 @@ export class CarouselUtility {
     // if the page is shown, play the carousel
     public handleVisibilityChange() {
         if (document.hidden) {
-            console.log('Page Hidden :', document.hidden);
             this.setPageVisibility(false);
         } else {
-            console.log('Page Visible :', document.hidden);
             this.setPageVisibility(true);
         }
     }
