@@ -238,7 +238,7 @@ export class DevCarouselComponent implements OnInit, AfterViewInit, OnDestroy {
     }
 
     completeAnimationHandler(event) {
-        console.log('1 : Transition complete!  This is the callback, no library needed!');
+        // console.log('1 : Transition complete!  This is the callback, no library needed!');
         this.renderer.removeClass(this.currentSlide, this.currentClass);
 
         setTimeout(() => {

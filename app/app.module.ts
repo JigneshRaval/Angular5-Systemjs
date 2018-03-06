@@ -37,6 +37,8 @@ import { CarouselNewIndex } from './components/carousel/dev-carousel-index.compo
 import { DevCarouselComponent } from './components/carousel/dev-carousel.component';
 import { CarouselUtility } from './components/carousel/dev-carousel.utility';
 
+import { ObservableExamplesComponent } from './components/observable-examples/observable.component'
+
 @NgModule({
     imports: [
         BrowserModule,
@@ -66,7 +68,8 @@ import { CarouselUtility } from './components/carousel/dev-carousel.utility';
         HomeComponent,
         AccordionComponent,
         CarouselNewIndex,
-        DevCarouselComponent
+        DevCarouselComponent,
+        ObservableExamplesComponent
     ],
     providers: [
         MessageService,

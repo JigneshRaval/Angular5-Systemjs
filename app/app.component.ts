@@ -28,7 +28,9 @@ import { Subscription } from 'rxjs/Subscription';
 
         <accordion-one-component (myFunction)="alertAccordion($event)"></accordion-one-component>
 
-        <carousel-new-index></carousel-new-index>
+        <!--<carousel-new-index></carousel-new-index>-->
+
+        <observable-examples-component></observable-examples-component>
     </div>
   `,
     styles: [`
